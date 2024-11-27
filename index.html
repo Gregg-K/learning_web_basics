@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>HTML 5 Catch UP</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.png" type="image/png">
+
 </head>
 <body>
     <header>
@@ -22,7 +24,7 @@
     </header>
     <main>
         <section id="Analytic-cards" class="cards-container">
-            <div class="card shadowed" id="lesson-card">
+            <!-- <div class="card shadowed" id="lesson-card">
                 <h2>Lesson completed</h2>
                 <div class="progress-bar" data-value="75">
                     <div class="progress" style="width: 75%";></div>
@@ -30,7 +32,7 @@
                     
                 <p><strong>75%</strong></p>
                 <button class="modal-btn" onclick="showModal('lesson-modal')">Details</button>
-            </div>
+            </div> -->
 
             <div class="card shadowed" id="hours-card">
                 <h2>Hours Spent</h2>
@@ -53,8 +55,35 @@
             </div>
             
         </section>
+
+        <!-- Modal Section -->
+         <section>
+            <div id="hours-modal" class="modal">
+                <div class="modal-content">
+                <span class="close-btn" onclick="closeModal('hours-modal')"">&times;</span>
+                <h2>Hours spent</h2>
+                <p>YOu have spent 15 hours our of 30 scheduled hours</p>
+                <p>YOu are making good progress</p>
+            </div>
+        </div>
+
+            <div id="projects-modal" class="modal">
+                <div class="modal-content">
+                <span class="close-btn" onclick="closeModal('hours-modal')"">&times;</span>
+                <h2>Project completed</h2>
+                <p>You have spent 15 hours our of 30 scheduled hours</p>
+                <p>You are making good progress</p>
+            </div>
+            </div>
+            </div>
+         </section>
+       
     </main>
-    <footer></footer>
+    <footer>
+        <p>&copy; 2023 Impactful Code. All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
 
     
 </body>
